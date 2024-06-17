@@ -1,0 +1,122 @@
+/* Big Shoulders Display font */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+/* Lexend Deca font */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  /* primary colors */
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  /* neutral colors */
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+  /* when you scroll there is a smooth animation */
+  scroll-behavior: smooth;
+  background-color: var(--veryLightGray);
+}
+
+main {
+  /* pushes main to the center */
+  margin: 60px 15px 60px 15px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: var(--veryLightGray);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  border-radius: 30px;
+  padding: 10px 30px;
+  border: none;
+}
+
+button:hover {
+  border: 2px solid var(--veryLightGray);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--transparentWhite);
+}
+
+#sedan-card {
+  background-color: var(--brightOrange);
+  /* top left, top right, bottom left, bottom right */
+  border-radius: 5px 5px 0 0;
+  color: var(--veryLightGray);
+}
+
+#sedan-card button {
+  color: var(--brightOrange);
+}
+
+#sedan-card button:hover {
+  background-color: var(--brightOrange);
+  color: var(--transparentWhite);
+}
+
+#suv-card {
+  background-color: var(--darkCyan);
+  color: var(--veryLightGray);
+}
+
+#suv-card button {
+  color: var(--darkCyan);
+}
+
+#suv-card button:hover {
+  background-color: var(--darkCyan);
+  color: var(--transparentWhite);
+}
+
+#luxury-card {
+  background-color: var(--veryDarkCyan);
+  border-radius: 0 0 5px 5px;
+  color: var(--veryLightGray);
+}
+
+#luxury-card button {
+  color: var(--veryDarkCyan);
+}
+
+#luxury-card button:hover {
+  background-color: var(--veryDarkCyan);
+  color: var(--transparentWhite);
+}
+
+/* when the screen is 1440px wide or more */
+
+@media (min-width: 90em) {
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  #sedan-card,
+  #suv-card,
+  #luxury-card {
+    width: 30%;
+  }
+
+  #sedan-card {
+    border-radius: 10px 0 0px 10px;
+  }
+
+  #luxury-card {
+    border-radius: 0 10px 10px 0;
+  }
+  
+}

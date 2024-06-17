@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- tells browser which kind of characters it will use -->
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon import -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- browser web page title -->
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- bootstrap 5.3.3 cdn import link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- main style sheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- semantic html tag and also makes card look centered in mobile design with some margin -->
+    <main>
+      <!-- uses bootstrap container class to contain and pad content inside, it's max-width changes depending on breakpoint -->
+      <div class="container">
+        <!-- row class wraps a column which takes 100% of the width it add's some gutter (space) -->
+        <div class="row">
+          <!-- col-12 + col-lg-4 when it's shown in mobile screen it will ocupy 100% of the width and when it's large screen it will ocupy a 3rd -->
+          <div id="sedan-card" class="col-12 col-lg-4 p-5">
+            <img src="images/icon-sedans.svg" alt="sedan svg logo" />
+            <h2 class="my-4">Sedans</h2>
+            <p class="my-4">
+              Choose a sedan for its affordability and excellent fuel economy.
+              Ideal for cruising in the city or on your next road trip.
+            </p>
+            <button class="my-4">Learn More</button>
+          </div>
+          <!-- each column will also be the card itself with id and will have some padding -->
+          <div id="suv-card" class="col-12 col-lg-4 p-5">
+            <img src="images/icon-suvs.svg" alt="suv svg logo" />
+            <h2 class="my-4">SUVs</h2>
+            <p class="my-4">
+              Take an SUV for its spacious interior, power, and versatility.
+              Perfect for your next family vacation and off-road adventures.
+            </p>
+            <button class="my-4">Learn More</button>
+          </div>
+
+          <div id="luxury-card" class="col-12 col-lg-4 p-5">
+            <img src="images/icon-luxury.svg" alt="luxury svg logo" />
+            <h2 class="my-4">Luxury</h2>
+            <p class="my-4">
+              Cruise in the best car brands without the bloated prices. Enjoy
+              the enhanced comfort of a luxury rental and arrive in style.
+            </p>
+            <button class="my-4">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
